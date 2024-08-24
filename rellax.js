@@ -217,7 +217,7 @@
       var dataDesktopSpeed = el.getAttribute( 'data-rellax-desktop-speed' );
       var dataVerticalSpeed = el.getAttribute('data-rellax-vertical-speed');
       var dataHorizontalSpeed = el.getAttribute('data-rellax-horizontal-speed');
-      var dataVericalScrollAxis = el.getAttribute('data-rellax-vertical-scroll-axis');
+      var dataVerticalScrollAxis = el.getAttribute('data-rellax-vertical-scroll-axis');
       var dataHorizontalScrollAxis = el.getAttribute('data-rellax-horizontal-scroll-axis');
       var dataZindex = el.getAttribute( 'data-rellax-zindex' ) || 0;
       var dataMin = el.getAttribute( 'data-rellax-min' );
@@ -271,7 +271,7 @@
       var horizontalSpeed = dataHorizontalSpeed ? dataHorizontalSpeed : self.options.horizontalSpeed;
 
       // Optional individual block movement axis direction as data attr, otherwise global movement direction
-      var verticalScrollAxis = dataVericalScrollAxis ? dataVericalScrollAxis : self.options.verticalScrollAxis;
+      var verticalScrollAxis = dataVerticalScrollAxis ? dataVerticalScrollAxis : self.options.verticalScrollAxis;
       var horizontalScrollAxis = dataHorizontalScrollAxis ? dataHorizontalScrollAxis : self.options.horizontalScrollAxis;
 
       var bases = updatePosition(percentageX, percentageY, speed, verticalSpeed, horizontalSpeed);
